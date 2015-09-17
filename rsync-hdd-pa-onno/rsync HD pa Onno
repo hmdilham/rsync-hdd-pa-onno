@@ -1,0 +1,5 @@
+## Tanpa catat ke log (progress terlihat)
+rsync -rvzh --ignore-existing --progress /media/ilham/pustaka/pustaka/* .
+
+## dengan catat ke log (progress dihilangkan untuk hasil yg terbaik)
+rsync -rvzh --ignore-existing /media/ilham/BACKUP/ . |tee -a buku_baru_15_08_26.txt
